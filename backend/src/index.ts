@@ -11,7 +11,7 @@ const app = express()
 
 const corsOptions = {
     // origin: process.env.CLIENT_URL,  
-    origin: 'https://alter-office-machine-task.vercel.app/',
+    origin: 'https://alter-office-machine-task.vercel.app',
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
     credentials: true,
 };
