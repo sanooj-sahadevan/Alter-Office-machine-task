@@ -1,0 +1,17 @@
+# Ignore Node.js dependencies
+node_modules/
+package-lock.json
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore build files
+dist/
+build/
+
+# Ignore VS Code settings
+.vscode/

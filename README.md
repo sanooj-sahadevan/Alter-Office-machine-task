@@ -13,8 +13,8 @@
 ### Installation  
 1. **Clone the repository**:  
    ```bash  
-   git clone https://github.com/JithinGeorge10/the-alter-office-task.git 
-   cd  https://github.com/JithinGeorge10/the-alter-office-task
+   git clone https://github.com/sanooj-sahadevan/Alter-Office-machine-task.git
+   cd  https://github.com/sanooj-sahadevan/Alter-Office-machine-task.git
 
 
 
