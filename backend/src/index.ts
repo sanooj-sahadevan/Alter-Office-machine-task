@@ -12,7 +12,7 @@ const app = express();
 
 // CORS configuration with additional headers for Cross-Origin-Opener-Policy
 const corsOptions = {
-  origin: 'https://alter-office-machine-task.vercel.app',  // Update with your frontend URL
+  origin: 'https://alter-office-machine-task.vercel.app', 
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
   credentials: true,
 };

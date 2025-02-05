@@ -36,7 +36,7 @@ export const login = async (req, res) => {
         const token = createToken(email, userDetails.id);
 
         res.cookie('jwt', token, {
-            httpOnly: false,
+            httpOnly: true,
             maxAge,
             sameSite: 'none',
             secure: true,
@@ -69,7 +69,7 @@ export const verfiyJwt = async (req, res) => {
         if (isBlackListed) {
             return res.status(403).send('Token is not valid')
         }
-        jwt.verify(token, 'sanoojsanooj', async (err: any, payload: { userId: any }) => {
+        jwt.verify(token, process.env.JWT_SECRET, async (err: any, payload: { userId: any }) => {
             if (err) return res.status(403).send('Token is not valid')
             res.json({ success: true })
         })
