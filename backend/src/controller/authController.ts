@@ -36,7 +36,7 @@ export const login = async (req, res) => {
         const token = createToken(email, userDetails.id);
 
         res.cookie('jwt', token, {
-            httpOnly: true,
+            httpOnly: false,
             maxAge,
             sameSite: 'none',
             secure: true,
